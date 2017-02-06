@@ -13,6 +13,10 @@ Template.userInfo.helpers
 	email: ->
 		user = Template.instance().user.get()
 		return user.emails?[0]?.address
+	
+	phoneNumber: ->
+		user = Template.instance().user.get()
+		return user.phone?[0]?.phoneNumber
 
 	utc: ->
 		user = Template.instance().user.get()
