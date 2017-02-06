@@ -85,6 +85,7 @@ Package.onUse(function(api) {
 	api.addFiles('server/functions/settings.coffee', 'server');
 	api.addFiles('server/functions/setUserAvatar.js', 'server');
 	api.addFiles('server/functions/setUsername.coffee', 'server');
+	api.addFiles('server/functions/setPhone.js', 'server');
 	api.addFiles('server/functions/setEmail.js', 'server');
 	api.addFiles('server/functions/unarchiveRoom.js', 'server');
 	api.addFiles('server/functions/updateMessage.js', 'server');
@@ -152,6 +153,7 @@ Package.onUse(function(api) {
 	api.addFiles('server/methods/setRealName.js', 'server');
 	api.addFiles('server/methods/setUsername.js', 'server');
 	api.addFiles('server/methods/setEmail.js', 'server');
+	api.addFiles('server/methods/setPhone.js', 'server');
 	api.addFiles('server/methods/unarchiveRoom.js', 'server');
 	api.addFiles('server/methods/unblockUser.js', 'server');
 	api.addFiles('server/methods/updateMessage.js', 'server');

@@ -12,6 +12,9 @@ Template.accountProfile.helpers
 	email: ->
 		return Meteor.user().emails?[0]?.address
 
+	phone: ->
+		return Meteor.user().phone?[0]?.phoneNumber
+
 	emailVerified: ->
 		return  Meteor.user().emails?[0]?.verified
 
@@ -81,6 +84,9 @@ Template.accountProfile.onCreated ->
 				return
 			else
 				data.email = _.trim $('#email').val()
+
+		if _.trim $('#phone').val()
+			data.phone = _.trim $('#phone').val()
 
 		customFields = {}
 		$('[data-customfield=true]').each () ->

@@ -57,6 +57,10 @@ Meteor.methods({
 			Meteor.call('setUsername', settings.username);
 		}
 
+		if (settings.phone) {
+			Meteor.call('setPhone', settings.phone);
+		}
+
 		if (settings.email) {
 			if (!checkPassword(user, settings.currentPassword)) {
 				throw new Meteor.Error('error-invalid-password', 'Invalid password', {

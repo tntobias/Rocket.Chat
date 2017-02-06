@@ -143,6 +143,10 @@ RocketChat.saveUser = function(userId, userData) {
 			RocketChat.setEmail(userData._id, userData.email);
 		}
 
+		if (userData.phone) {
+			RocketChat.setPhone(userData._id, userData.phone);
+		}
+
 		if (userData.password && userData.password.trim() && RocketChat.authz.hasPermission(userId, 'edit-other-user-password')) {
 			Accounts.setPassword(userData._id, userData.password.trim());
 		}

@@ -226,6 +226,15 @@ class ModelUsers extends RocketChat.models._Base
 
 		return @update _id, update
 
+	setPhone: (_id, phone) ->
+		update =
+			$set: 
+				phone: [
+					phoneNumber: phone
+				]
+		
+		return @update _id, update
+
 	setEmailVerified: (_id, email) ->
 		query =
 			_id: _id

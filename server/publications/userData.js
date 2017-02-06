@@ -18,6 +18,7 @@ Meteor.publish('userData', function() {
 			active: 1,
 			defaultRoom: 1,
 			customFields: 1,
+			phone: 1,
 			'services.github': 1,
 			'services.gitlab': 1,
 			requirePasswordChange: 1,

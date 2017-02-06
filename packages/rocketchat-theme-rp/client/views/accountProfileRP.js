@@ -1,0 +1,1 @@
+Template.accountProfileRP.replaces('accountProfile');
