@@ -1,0 +1,1 @@
+bootstrap = Npm.require('bootstrap');
